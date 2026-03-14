@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect - Animal Rights</title>
+    <!-- ✅ Fixed: Match homepage CSS filename -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ✅ Navigation Bar (Identical to homepage) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>AnimalRights</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="importance.html">Importance</a></li>
+                <li><a href="effect.html" class="active">Effect</a></li>
+                <li><a href="index.html#report">Report</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Matches homepage style) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Interactive Effect</h1>
+            <p>Engage with our mission — click below to explore, learn, and take action</p>
+            <a href="#effect-demo" class="btn btn-primary">Try Effect</a>>
+            <a href="index.html#report" class="btn btn-secondary">Report Abuse</a>
+        </div>
+    </section>
+
+    <!-- ✅ ONE IMAGE SECTION (Consistent with homepage) -->
+    <section class="page-image-section">
+        <div class="container">
+            <h2 class="section-title">Effect Page</h2>
+            <div class="single-image">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800" alt="Playful cat" loading="lazy">
+            </div>
+            <p class="image-caption">Even playful cats like this one deserve rights and protection.</p>
+        </div>
+    </section>
+
+    <!-- ✅ Interactive Effect Section (Styled with homepage classes) -->
+    <section id="effect-demo" class="mission">
+        <div class="container">
+            <h2 class="section-title">Choose an Effect</h2>
+            
+            <!-- Effect Buttons (Using homepage button styles) -->
+            <div class="mission-grid">
+                <button class="mission-card effect-btn" onclick="showPawPrints()">
+                    <i class="fas fa-paw"></i>
+                    <h3>Paw Prints</h3>
+                    <p>Watch animated paws appear across the screen</p>
+                </button>
+                <button class="mission-card effect-btn" onclick="showFacts()">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Fun Facts</h3>
+                    <p>Discover amazing truths about animal intelligence</p>
+                </button>
+                <button class="mission-card effect-btn" onclick="showPledge()">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Take Pledge</h3>
+                    <p>Commit to compassion with our digital promise</p>
+                </button>
+            </div>
+
+            <!-- Dynamic Content Area (Styled like mission cards) -->
+            <div id="effect-content" class="effect-content">
+                <div class="mission-card" style="margin-top: 2rem; text-align: center;">
+                    <i class="fas fa-mouse-pointer fa-2x" style="color: #666; margin-bottom: 1rem;"></i>
+                    <p style="color: #666; font-size: 1.1rem;">Click a button above to see an effect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Callout (Consistent visual rhythm) -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Every Action Creates Ripple Effect</h2>
+            <p>Small choices — like adopting, donating, or speaking up — create massive change for animals worldwide.</p>
+            <a href="index.html#report" class="btn btn-primary">Make an Impact</a>
+            <a href="importance.html" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer (Identical to homepage) -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Animal Rights Organization. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="importance.html">Importance</a> | 
+                <a href="effect.html">Effect</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ Same JavaScript file -->
+    <script src="script.js"></script>
+    
+    <!-- ✅ Page-Specific Interactive Scripts -->
+    <script>
+        // Paw Prints Effect
+        function showPawPrints() {
+            const content = document.getElementById('effect-content');
+            content.innerHTML = `
+   <script>
+    console.log('Effects page loaded successfully! 🐾');
+    
+    // Test if functions exist
+    console.log('showPawPrints:', typeof showPawPrints);
+    console.log('showFacts:', typeof showFacts);
+    console.log('showPledge:', typeof showPledge);
+</script>
+  
+   

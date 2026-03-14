@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Animal Rights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ✅ Navigation Bar (Same on ALL pages) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>AnimalRights</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="importance.html">Importance</a></li>
+                <li><a href="effect.html">Effect</a></li>
+                <li><a href="index.html#report">Report</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Stand Up for Animal Rights</h1>
+            <p>Every creature deserves compassion, respect, and protection</p>
+            <a href="#main-image" class="btn btn-primary">Learn More</a>
+            <a href="#report" class="btn btn-secondary">Report Abuse</a>
+        </div>
+    </section>
+
+    <!-- ✅ ONE IMAGE SECTION -->
+    <section id="main-image" class="page-image-section">
+        <div class="container">
+            <h2 class="section-title">Welcome</h2>
+            <div class="single-image">
+                <img src="https://images.unsplash.com/photo-1560709447-8d36e6e54447?w=800" alt="Goat">
+            </div>
+            <p class="image-caption">This goat represents the innocent animals we protect every day.</p>
+        </div>
+    </section>
+
+    <!-- Mission Cards -->
+    <section class="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Compassion</h3>
+                    <p>Kindness to all beings</p>
+                </div>
+                <div class="mission-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Protection</h3>
+                    <p>Fighting for rights</p>
+                </div>
+                <div class="mission-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>Spreading awareness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ REPORT FORM SECTION -->
+    <section id="report" class="report-section">
+        <div class="container">
+            <h2 class="section-title">Report Animal Abuse</h2>
+            <p class="section-subtitle">Your report can save a life. All reports are confidential.</p>
+            <form class="report-form" id="reportForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location of Incident</label>
+                    <input type="text" id="location" placeholder="Enter address or location" required>
+                </div>
+                <div class="form-group">
+                    <label for="abuse-type">Type of Abuse</label>
+                    <select id="abuse-type" required>
+                        <option value="">Select abuse type</option>
+                        <option value="neglect">Neglect</option>
+                        <option value="physical">Physical Abuse</option>
+                        <option value="abandonment">Abandonment</option>
+                        <option value="illegal-trade">Illegal Trade</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="5" placeholder="Describe what you witnessed" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Report</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Animal Rights Organization. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="importance.html">Importance</a> | 
+                <a href="effect.html">Effect</a>
+            </div>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ Connect JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Animal Rights</title>
+    <!-- ✅ Fixed: Match homepage CSS filename -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ✅ Navigation Bar (Identical to homepage) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>AnimalRights</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="importance.html">Importance</a></li>
+                <li><a href="effect.html">Effect</a></li>
+                <li><a href="index.html#report">Report</a></li>
+            </ul>
+            <div class="burger">
+                <!-- ✅ Fixed: line1 instead of line35 -->
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Matches homepage style) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Us</h1>
+            <p>Learn about our journey, mission, and the team behind the change</p>
+            <a href="#our-story" class="btn btn-primary">Our Story</a>
+            <a href="#team" class="btn btn-secondary">Meet the Team</a>
+        </div>
+    </section>
+
+    <!-- ✅ ONE IMAGE SECTION (Consistent with homepage) -->
+    <section id="our-story" class="page-image-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="single-image">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800" alt="Rescued dog looking hopeful">
+            </div>
+            <p class="image-caption">Founded in 2010, we've been protecting animals like this dog for over a decade.</p>
+            
+            <div class="about-text">
+                <p>We are dedicated to ensuring every animal is treated with dignity and respect.</p>
+                <p>Our team works tirelessly to rescue, rehabilitate, and find homes for animals in need.</p>
+                <p>Together with volunteers worldwide, we've made a significant impact on animal welfare.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Values (Matches homepage mission section style) -->
+    <section id="team" class="mission">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Compassion First</h3>
+                    <p>We believe empathy is the foundation of all meaningful change for animals.</p>
+                </div>
+                <div class="mission-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Driven</h3>
+                    <p>Powered by volunteers, donors, and advocates united for a common cause.</p>
+                </div>
+                <div class="mission-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Advocacy in Action</h3>
+                    <p>We turn awareness into policy change and direct intervention for animals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (Consistent with homepage buttons) -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join Our Mission</h2>
+            <p>Whether you donate, volunteer, or simply spread the word — you make a difference.</p>
+            <a href="index.html#report" class="btn btn-primary">Take Action</a>
+            <a href="importance.html" class="btn btn-secondary">Learn Why It Matters</a>
+        </div>
+    </section>
+
+    <!-- Footer (Identical to homepage) -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Animal Rights Organization. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="importance.html">Importance</a> | 
+                <a href="effect.html">Effect</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ Same JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
